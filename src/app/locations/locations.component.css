@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+#wrapper{
+    width: inherit;
+    margin: auto;
+}
+
+
+
+
+.header{
+    height: 50px;
+    color: gold;
+}
+
+
+.location{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    border-style: double;
+    text-align: center;
+    background-color: rgb(196, 255, 196);
+    margin-left: 20px;
+}
+
+
+p{
+    margin: 10px 0px;
+}
+
+button{
+    width:70px;
+    height: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    margin-top: 40px;
+}
