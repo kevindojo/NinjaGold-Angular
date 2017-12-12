@@ -6,9 +6,13 @@ export class DataService {
   //create these variables so you can use them in the functions below
 
   sender: String = "";
+      // the location of button pressed (cave, farm, house, casino)
   sum: number = 0;
+      // the total of gold earn/loss
   rand: number;
+    // part of the random function associated to button pressed
   messages: String[] = [];
+    // this displays the activity ( button pressed )
 
 
   constructor() { 
@@ -16,7 +20,6 @@ export class DataService {
   }
 
 //When this function is called by 'GetGold' button pressed.... Do the following:
-
   FarmGold(sender:String, min, max){
     //location calcuations
     this.rand = Math.floor(Math.random() *(max - min + 1) + min);
@@ -30,10 +33,12 @@ export class DataService {
 
     this.displayMessage(sender, this.rand);
     return this.rand;
+  } // end of FarmGold Function!
 
-  }
 
 
+
+  
   //display the activity
   displayMessage(sender: String, gold:number){
     if(gold<0){

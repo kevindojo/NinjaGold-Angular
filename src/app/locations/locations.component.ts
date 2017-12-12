@@ -10,7 +10,7 @@ export class LocationsComponent implements OnInit {
 
   constructor(private _dataService: DataService) { }
 
-  farm: number;
+  location: number;
 
   ngOnInit() {
   }
@@ -19,8 +19,9 @@ export class LocationsComponent implements OnInit {
         // it then calls on the FarmGold function in the data.service.ts
               // data.service.ts is where all the logic should occur
   GetGold(sender:string, min, max){
-    this.farm = this._dataService.FarmGold(sender, min, max);
-    console.log ("in GetGold, locations.component.ts", this.farm);
-  }
+    this.location = this._dataService.FarmGold(sender, min, max);
+    console.log ("in GetGold, locations.component.ts", this.location);
+  } // end of GetGold Function
+    // this function establishes how much gold is earned/lossed (console.log)
 
 }
