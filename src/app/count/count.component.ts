@@ -10,11 +10,7 @@ export class CountComponent implements OnInit {
 
   constructor(private _dataService: DataService) { }
 
-  sum: number = 0;
-
-  ngOnInit() {
-    console.log('count.ts ngOnInit')
-    
+  ngOnInit() { 
   }
 
 }

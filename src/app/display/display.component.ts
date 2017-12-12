@@ -11,6 +11,7 @@ export class DisplayComponent implements OnInit {
   constructor(private _dataService: DataService) { }
 
   ngOnInit() {
+    console.log("Welcome to Ninja Gold")
   }
 
 }
