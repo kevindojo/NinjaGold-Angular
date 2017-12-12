@@ -7,6 +7,7 @@
     width: 1000px;
     margin: auto;
     border-style: dashed;
+
 }
 
 .title{
@@ -20,7 +21,7 @@
     display: inline-block;
     width: 150px;
     border-style: double;
-    margin-left: 17px;
+    margin-left: 50px;
     margin-bottom: 50px;
     text-align: center;
     background-color: lightyellow;
@@ -34,7 +35,4 @@
 
 }
 
-.display{
-    width: inherit;
-}
 

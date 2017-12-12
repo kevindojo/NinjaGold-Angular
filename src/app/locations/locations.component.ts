@@ -19,8 +19,8 @@ export class LocationsComponent implements OnInit {
         // it then calls on the FarmGold function in the data.service.ts
               // data.service.ts is where all the logic should occur
   GetGold(sender:string, min, max){
-    console.log ("in GetGold", this.farm);
     this.farm = this._dataService.FarmGold(sender, min, max);
+    console.log ("in GetGold, locations.component.ts", this.farm);
   }
 
 }
